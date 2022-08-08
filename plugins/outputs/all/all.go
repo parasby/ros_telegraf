@@ -57,4 +57,5 @@ import (
 	_ "github.com/influxdata/telegraf/plugins/outputs/wavefront"
 	_ "github.com/influxdata/telegraf/plugins/outputs/websocket"
 	_ "github.com/influxdata/telegraf/plugins/outputs/yandex_cloud_monitoring"
+	_ "github.com/influxdata/telegraf/plugins/outputs/rosbridge_pub"
 )
