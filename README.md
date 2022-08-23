@@ -149,8 +149,7 @@ telegraf --config telegraf.conf --input-filter cpu:mem --output-filter influxdb
 telegraf --config telegraf.conf --input-filter rosbridge_sub --output-filter file
 ```
 
-### Run telegraf, enabling the file input plugin, and ros-bridge output
-plugins
+### Run telegraf, enabling the file input plugin, and ros-bridge output plugin
 ```shell
 telegraf --config telegraf.conf --input-filter file --output-filter rosbridge_pub
 ```
