@@ -143,6 +143,18 @@ telegraf --config telegraf.conf
 telegraf --config telegraf.conf --input-filter cpu:mem --output-filter influxdb
 ```
 
+### Run telegraf, enabling the ros-bridge input, and file output plugin
+
+```shell
+telegraf --config telegraf.conf --input-filter rosbridge_sub --output-filter file
+```
+
+### Run telegraf, enabling the file input plugin, and ros-bridge output
+plugins
+```shell
+telegraf --config telegraf.conf --input-filter file --output-filter rosbridge_pub
+```
+
 ## Contribute to the Project
 
 Telegraf is an MIT licensed open source project and we love our community. The fastest way to get something fixed is to open a PR. Check out our [contributing guide](CONTRIBUTING.md) if you're interested in helping out. Also, join us on our [Community Slack](https://influxdata.com/slack) or [Community Page](https://community.influxdata.com/) if you have questions or comments for our engineering teams.
